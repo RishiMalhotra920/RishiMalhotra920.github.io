@@ -7,13 +7,13 @@ tags: diffusion-models math
 categories: ml-research
 related_posts: false
 toc:
-  - name: The Core Idea
-  - name: The Forward Process
-  - name: The Reverse Process
-  - name: Training Objective
-  - name: Sampling
-  - name: Key Insights
-  - name: Conclusion
+  - name: Basics
+  - name: Forward and Backward SDEs and ODEs
+  - name: Simulating the ODEs and SDEs
+  - name: Training Networks for the ODE and SDE
+  - name: Conditioning on Images
+  - name: SDEs
+  - name: References
 ---
 
 These notes are based heavily on [1].
