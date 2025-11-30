@@ -177,13 +177,13 @@ $$
 \mathcal{L}_{\text{CFM}}(\theta) = \mathbb{E}_{t \sim \text{Unif}, z \sim p_{\text{data}}, x \sim p_t(\cdot | z)} \left[\|u_t^\theta(x) - u_t^{\text{target}}(x|z)\|^2\right] \tag{23}
 $$
 
-For ODEs we must minimize the above loss. For SDEs, we can minimize the $\mathcal{L}_{\text{CFM}}(\theta)$ or the $\mathcal{L}_{\text{CSM}}$ loss since the score function can be written in terms of the velocity and vice versa.
+For ODEs we must minimize the above loss. For SDEs, we can minimize the $$\mathcal{L}_{\text{CFM}}(\theta)$$ or the $$\mathcal{L}_{\text{CSM}}$$ loss since the score function can be written in terms of the velocity and vice versa.
 
 $$
 \mathcal{L}_{\text{CSM}}(\theta) = \mathbb{E}_{t \sim \text{Unif}, z \sim p_{\text{data}}, x \sim p_t(\cdot | z)}\left[\|s_t^\theta(x) - \nabla \log p_t(x|z)\|^2\right] \tag{24}
 $$
 
-The proof that $\mathcal{L}_{\text{CFM}}(\theta) = \mathcal{L}_{\text{FM}}(\theta) + C$ (where $C$ is independent of $\theta$) can be found in Theorem 18 in the MIT notes [1].
+The proof that $$\mathcal{L}_{\text{CFM}}(\theta) = \mathcal{L}_{\text{FM}}(\theta) + C$$ (where $C$ is independent of $\theta$) can be found in Theorem 18 in the MIT notes [1].
 
 **ODEs**
 
