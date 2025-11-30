@@ -1,0 +1,102 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Dimensions
+$max-content-width: {{ site.max_width }};
+
+@import
+  "variables",
+  "themes",
+  "layout",
+  "base",
+  "distill",
+  "cv",
+  "tabs",
+  "typograms",
+  "font-awesome/fontawesome",
+  "font-awesome/brands",
+  "font-awesome/solid",
+  "font-awesome/regular",
+  "tabler-icons/tabler-icons.scss",
+  "tabler-icons/tabler-icons-filled.scss",
+  "tabler-icons/tabler-icons-outline.scss"
+;
+
+// Custom styles
+.social {
+  .contact-icons {
+    font-size: 2rem !important;
+
+    a {
+      margin: 0 0.5rem !important;
+
+      img {
+        width: 1.6rem !important;
+      }
+    }
+  }
+}
+
+// Timeline styles
+.timeline {
+  position: relative;
+  padding: 20px 0;
+  margin: 20px 0;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--global-divider-color);
+  }
+
+  .timeline-item {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    .timeline-marker {
+      position: absolute;
+      left: 3px;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--global-theme-color);
+      border: 3px solid var(--global-bg-color);
+      z-index: 1;
+    }
+
+    .timeline-content {
+      .timeline-title {
+        margin: 0 0 5px 0;
+        font-size: 1.1rem;
+        font-weight: 500;
+        color: var(--global-text-color);
+      }
+
+      .timeline-date {
+        margin: 0 0 8px 0;
+        font-size: 0.9rem;
+        color: var(--global-text-color-light);
+        font-style: italic;
+      }
+
+      .timeline-description {
+        margin: 0;
+        font-size: 0.95rem;
+        color: var(--global-text-color);
+        line-height: 1.5;
+      }
+    }
+  }
+}

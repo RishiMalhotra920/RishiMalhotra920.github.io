@@ -1,0 +1,48 @@
+# Development configuration overrides for fast iteration
+# This file is merged with _config.yml during development
+
+# Disable expensive image processing
+imagemagick:
+  enabled: false
+
+# Disable minification and compression for faster builds
+jekyll-minifier:
+  compress_javascript: false
+
+# Disable terser for faster JS processing
+terser:
+  compress:
+    drop_console: false
+
+# Simpler markdown processing
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    span:
+      line_numbers: false
+    block:
+      line_numbers: false
+
+# Disable slow plugins in development
+plugins:
+  - jekyll-archives-v2
+  - jekyll-email-protect
+  - jekyll-feed
+  - jekyll-paginate-v2
+  - jekyll-sitemap
+  - jekyll-toc
+  # Disabled for speed:
+  # - jekyll-imagemagick
+  # - jekyll-minifier
+  # - jekyll-terser
+  # - jekyll/scholar
+  # - jekyll-twitter-plugin
+
+# Faster SASS compilation
+sass:
+  style: expanded
+
+# Limit blog posts during development (only build recent posts)
+# Comment this out if you need to see all posts
+limit_posts: 3
