@@ -1499,8 +1499,12 @@ figure.cover {
 }
 
 mjx-container[jax="CHTML"][display="true"] {
-  overflow-x: auto;
-  overflow-y: hidden;
+  display: block !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch;
   text-align: center;
-  max-width: 100%;
+  max-width: 100% !important;
+  width: 100% !important;
+  min-width: 0 !important;
 }
