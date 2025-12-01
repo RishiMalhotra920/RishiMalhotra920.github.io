@@ -18,6 +18,9 @@ social: true # includes social icons at the bottom of the page
 
 I'm an ML Research Engineer at Apple. Currently, I work on using Reinforcement Learning to train LLMs to induce certain behaviors. I am interested in research on Reinforcement Learning for LLMs and VLA models.
 
+
+Check out my blog <a href="https://rishimalhotra920.github.io/blog/">at this link</a>
+
 ---
 
 ## Experience
